@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanny/Teacher Recruitment Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+<section class="recruitment-form">
+    <h1>Child To Child Education Program</h1>
+    <h2>Employee Recruitment Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+            <!-- 1. Full Name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+            <!-- 2. Profile Photo -->
+            <label for="profilePhoto">Upload Profile Photo:</label>
+            <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+
+            <!-- 3. Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- 4. Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- 5. Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <!-- 6. Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+            <!-- 7. Address -->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Your current address" rows="3" required></textarea>
+
+            <!-- 8. Qualification -->
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" placeholder="Degree / Diploma" required>
+
+            <!-- 9. Experience -->
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" placeholder="e.g., 2" min="0" required>
+
+            <!-- 10. Skills -->
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., Child Care, Teaching" required>
+
+            <!-- 11. Preferred Job Type -->
+            <label for="jobType">Preferred Job Type:</label>
+            <select id="jobType" name="jobType" required>
+                <option value="">Select</option>
+                <option value="principal">Principal</option>
+                <option value="teacher">Teacher</option>
+                <option value="both">Admin</option>
+                  <option value="both">MTS Executive</option>
+                
+            </select>
+
+            <!-- 12. Expected Joining Date -->
+            <label for="joiningDate">Expected Joining Date:</label>
+            <input type="date" id="joiningDate" name="joiningDate" required>
+
+            <!-- 13. Resume Upload -->
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </section>
+
+
+  <nav>
+    <ul>
+        <li><a href="website.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       
+       
+        
+        
+    </u>
+</nav>  
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: rgba(44, 62, 80, 0.95);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: rgba(52, 73, 94, 0.95);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f1c40f;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(
+        rgba(52, 152, 219, 0.85),
+        rgba(41, 128, 185, 0.9)
+    );
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    color: #9fa7ae;
+}
+
+.about p {
+    opacity: 0.85;
+}
+
+/* =========================
+   COURSES SECTION
+========================= */
+
+.courses {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Course Cards */
+
+.course-box {
+    display: inline-block;
+    margin: 15px;
+    padding: 25px;
+    width: 300px;
+height: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+/* Card Hover Effect */
+
+.course-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.course-box h3 {
+   margin-bottom: 10px;
+ 
+    color: #2980b9;
+}
+
+.course-box p {
+    opacity: 0.85;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: rgba(44, 62, 80, 0.95);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-box {
+        width: 90%;
+    }
+}
+
+/* ABOUT SECTION */
+
+.about{
+    display:flex;
+    justify-content:center;
+    padding:60px;
+}
+
+/* Flip Card */
+
+.flip-card{
+    width:700px;
+    height:350px;
+    perspective:1000px;
+    cursor:pointer;
+}
+
+.flip-inner{
+    width:100%;
+    height:100%;
+    position:relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Rotate class when clicked */
+
+.flip-inner.active{
+    transform: rotateY(180deg);
+}
+
+/* Front + Back */
+
+.flip-front,
+.flip-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+/* FRONT SIDE */
+
+.flip-front{
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("child.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* BACK SIDE */
+
+.flip-back{
+    background:#2c3e50;
+    color:white;
+    transform: rotateY(180deg);
+}
+
+
+

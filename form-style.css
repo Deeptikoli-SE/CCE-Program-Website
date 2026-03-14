@@ -1,0 +1,174 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e8f0fe);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a; /* Deep blue */
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a; /* Deep blue */
+    font-weight: 700;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+.recruitment-form {
+    background: white;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   LABELS
+========================= */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+/* =========================
+   INPUTS, SELECTS, TEXTAREA
+========================= */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cfd3d8;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* File input styling - modern look */
+input[type="file"] {
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6; /* Soft blue */
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: #3b82f6; /* Blue */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #2563eb; /* Darker blue on hover */
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+textarea {
+    resize: vertical;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 700px) {
+    .recruitment-form {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    input, select, textarea, button {
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   OPTIONAL: ADD SUBTLE SHADOW ON FOCUS
+========================= */
+input:focus, textarea:focus, select:focus, input[type="file"]:focus {
+    background-color: #ffffff;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+nav {
+    background: rgba(52, 73, 94, 0.95);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin: 15px 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 60px 210px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f1c40f;
+}
+
